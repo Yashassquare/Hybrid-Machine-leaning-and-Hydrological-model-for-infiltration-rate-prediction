@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #make excel file with pridictor variables
 #the pridictor parameters like " % gravel  % sand  % Silt  %water cont" are derived from lab analysis and for Phililp's model 
 #(for example) the S (Sorptivity) and A (Transmissivity factor) are derived using infiltration rates of different test points and use the following code to derive those parameters
@@ -108,12 +102,7 @@ print(grid_search.best_params_)
 print("Mean Squared Error corresponding to the best parameters:", -grid_search.best_score_)
 
 #use the predicted model's parameters and fit the infiltration model for infiltration rates at target point
-
-
-# In[ ]:
-
-
-#example same way after deriving the predictor variables as above the same excel sheet can use fed to MissForest to predict model parameters at target point
+#example: same way after deriving the predictor variables as above the same excel sheet can use fed to MissForest to predict model parameters at target point
 ### use the MissForest code to do so
 
 import pandas as pd
